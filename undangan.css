@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Julee&family=Zeyada&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: black;
+	background-image: url(backgroundweb.jpg );
+	overflow-x: hidden;
+	font-family: 'Dancing Script', cursive;
+	font-size: 21px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+} 
+ul {
+	font-family: 'Dancing Script', cursive;
+	font-size: 19px;
+}
+ol {
+    list-style-type: decimal;
+	font-family: 'Dancing Script', cursive;
+	font-size: 19px;
+}
+
+p {
+	line-height: 2;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+.navbar {
+	width: 100vw;
+	height: 70px;
+	background-color: #5e9abe;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navbar_wrapper {
+	display: flex;
+	width: inherit;
+	max-width: 1080px;
+	height: inherit;
+	align-items:center;
+	justify-content:space-around;
+	margin: 0 auto;
+}
+.brand {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	font-weight: 700;
+}
+
+.navabar_menu {
+	display: flex;
+	flex-direction: row;
+	font-weight: 400;
+	font-size: 18px;
+	gap: 30px;
+	text-transform: capitalize;
+}
+.akad{
+	display: flex;
+	background-color: rgb(127, 129, 255);
+}
+.hero {
+	/*color: #87CEFA;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+	width: 100vw;
+	height: 400px;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    background-position: top;
+    transition-duration: 3s;
+    margin-bottom: 50px;
+	position: static;
+}
+audio{
+	display: block;
+	position: fixed;
+	top: 300px;
+	width: 20px;
+	right: 10px;
+	margin-right: 10px;
+}
+video{
+	width:500px;
+	height:400px;
+	margin-bottom: 150px;
+	border-radius: 10%;
+}
+iframe{
+	width:400px;
+	height: 300px;
+	margin-left: 30px;
+	margin-bottom: 150px;
+	border-radius: 10%;
+}
+.btn{
+	border-radius: 1rem;
+	background: #87CEFA;
+	color: black;
+	padding: .5rem 1rem;
+	cursor: grab;
+	font-size: 15px;	
+}
+
+.hero:hover {
+	background-position: bottom;
+}
+
+.hero p {
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0;
+}
+.hero h1 {
+	font-weight: 700;
+	font-size: 96px;
+	margin: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+li a,
+.dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #b3d5f5;
+    transition: all 0.5s ease;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A0522D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color:#2ca5dd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.section_title {
+	font-size: 64px;
+	font-weight: 700;
+	/*margin: 0;*/
+	margin-top: 100px;
+}
+
+.section_content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.section_content h2 {
+	font-size: 32px;
+	margin: 0;
+}
+
+.section_image {
+	/*width: 540px;*/
+	height: 350px;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+}
+	
+#akad .section_image {
+	background-image: url(WhatsApp\ Image\ 2023-03-09\ at\ 14.37.47.jpeg);
+}
+
+.form_wrapper {
+	width: inherit;
+	height: 567px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-image: url('');
+	background-size: cover;
+	background-position: bottom;
+	margin: 34px 0;
+}
+
+.form_wrapper:hover {
+	background-position: top;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+
+.form_buku {
+	background-image: url();
+	width: 400px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 3px 4px 6px rgb(135, 206, 250);
+	padding: 50px 70px;
+    gap: 25px;
+    justify-content: center;
+	border-radius: 10px;
+	padding: 0 30px;
+    box-sizing: border-box;
+	font-size: 30px;
+	border: 3px solid rgb(73, 172, 230);
+	margin-bottom: 50px;
+}
+
+.form_group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Dancing Script', cursive;
+}
+
+.form_group input {
+	height: 30px;
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border: 3px solid  rgb(135, 206, 250);
+	border-radius: 10px;
+}
+
+.form_wrapper button {
+	background-color: rgb(135, 206, 250);
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 44px;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: auto;
+}
+
+#map .section_content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.btn_map {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 266px;
+	height: 50px;
+	border: none;
+	outline-style: none;
+	background-color: #4fa7e2;
+}
+
+.btn_map:hover {
+	background-color: rgb(241, 244, 247);
+	box-shadow: 3px 5px 8px rgb(0, 0, 0, 0.199);
+}
+video{
+	height: auto;
+	margin-bottom: 150px;
+	margin-left: 200px;
+	margin-top: 100px;
+}
+.gallery_list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding: 30px;
+}
+
+.gallery_list img {
+	width: 50%;
+	object-fit: cover;
+}
+.tamu_undangan{
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: black;
+	font-family: 'Dancing Script', cursive;
+}
+table, th, td{
+	width: 50%;
+	table-layout: fixed;
+	align-items: center;
+	font-size: 25px;
+	border-collapse: collapse;
+	border:5px solid rgb(135, 206, 250);
+	/*font-family: Elaphant;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+    margin-left: 350px;
+	margin-right: 100px;
+}
+tr, th, td{
+	padding: 15px;
+}
+th{
+	background: #67a0d6;
+	color: white;
+	font-family: arial rgb(65, 183, 212);
+}
+td{
+	background: #568ea8;
+	color: rgb(255, 255, 255);
+}
+td:hover{
+	background: rgb(103, 172, 228);
+}
+
+.Twitter-logo{
+	width: 30px;
+	/* margin-top: 100px; */
+	/* margin-top: -35px; */
+	/* margin-bottom: 35px; */
+	
+}
+.IG-logo{
+	width: 30px;
+	/*margin-top: 50px;*/
+	/* margin-left: 175px; */
+	/* margin-bottom: 155px; */
+}
+
+footer {
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	background-color: #669bb9;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+footer p,
+footer h2 {
+    margin: 0;
+    color: #fff;
+}
